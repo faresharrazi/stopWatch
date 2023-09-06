@@ -1,0 +1,17 @@
+body {
+    background-color: beige;
+}
+
+.stopwatch {
+
+    margin: 20px auto;
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    scale: 1.1;
+}
