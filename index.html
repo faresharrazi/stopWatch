@@ -19,6 +19,17 @@
       <i id="reset" class="btn las la-power-off"></i>
     </div>
     <iframe id="livestorm-registration" width="100%" height="480" frameborder="0" src="https://app.livestorm.co/p/ab530cf4-c8e4-451e-b2a9-b2c7d9b4e1e8/form"></iframe>
+    <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const iframe = document.getElementById("livestorm-registration");
+        const currentSrc = iframe.src;
+        const queryParams = window.location.search; // Get query parameters from URL
+        
+        if (queryParams) {
+            iframe.src = currentSrc + queryParams; // Append the query parameters to the iFrame URL
+        }
+    });
+</script>
     <script src="app.js"></script>
   </body>
 </html>
